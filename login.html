@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Formulir Pendaftaran Mahasiswa</title>
+  <style>
+    h1 {
+      text-align: center;
+    }
+    body {
+      background-color: rgb(0, 195, 255);
+    }
+  </style>
+  <script src="script.js"></script>
+</head>
+<body>
+  <h1>Formulir Pendaftaran Mahasiswa</h1>
+  <form id="registration-form">
+    <table>
+      <tr>
+        <td><label for="nama">Nama:</label></td>
+        <td><input type="text" id="nama" name="nama" required></td>
+        <td id="nama-error"></td>
+      </tr>
+      <tr>
+        <td><label for="NPM">NPM:</label></td>
+        <td><input type="number" id="NPM" name="NPM" required></td>
+        <td id="NPM-error"></td>
+      </tr>
+      <tr>
+        <td><label for="jurusan">Jurusan:</label></td>
+        <td>
+          <select id="jurusan" name="jurusan" required>
+            <option value="">Pilih Jurusan Anda</option>
+            <option value="Prodi Informatika">Prodi Informatka</option>
+            <option value="Teknik Sipil">Teknik Sipil</option>
+            <option value="Teknik Elektro">Teknik Elektro</option>
+          </select>
+        </td>
+        <td id="jurusan-error"></td>
+      </tr>
+      <tr>
+        <td><label for="email">Email:</label></td>
+        <td><input type="email" id="email" name="email" required></td>
+        <td id="email-error"></td>
+      </tr>
+      <tr>
+        <td><label for="telepon">Telepon:</label></td>
+        <td><input type="tel" id="telepon" name="telepon" required></td>
+        <td id="telepon-error"></td>
+      </tr>
+      <tr>
+        <td colspan="2">
+          <button id="submit-btn">Daftar</button>
+        </td>
+      </tr>
+    </table>
+  </form>
+  <p>Sudah terdaftar? <a href="login.html">Login di sini</a> </p>
+  <img src="image/Logo_Gampang_IT_Black-removebg-preview.png" alt="Girl in a jacket" width="500" height="300">
+</body>
+</html>

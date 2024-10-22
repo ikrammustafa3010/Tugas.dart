@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tugas Website</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header id="main-header">
+        <h1>Portal Mahasiswa</h1>
+        <p>Selamat datang di portal mahasiswa unkhair prodi informatika. Temukan informasi penting di sini!</p>
+    </header>
+
+    <main>
+        <section class="content">
+            <h2>Informasi Terbaru</h2>
+            <p class="text">Dapatkan informasi terkini tentang jadwal perkuliahan dan papan informasi.</p>
+            <button class="btn" onclick="toggleInfo()">Lihat Info</button>
+            <div id="additional-info" class="hidden">
+                <h3>Jadwal perkuliahan Informatika Semester 5</h3>
+                <p>Jadwal perkuliahan semester ini adalah sebagai berikut:</p>
+                <ul>
+                    <li>Senin: Pemrograman Mobile - 10:50 - WIT - 14:10 - WIT </li>
+                    <li>Selasa: Keamanan Jaringan Komputer- 10:00 - WIT 12:00 - WIT </li>
+                    <li>Rabu: Pemrograman Web - 10:50 - WIT - 14:10 - WIT </li>
+                    <li>Kamis: Komunikasi Data - 13:20 - WIT - 15:00 - WIT </li>
+                </ul>
+            </div>
+        </section>
+
+        <aside class="sidebar">
+            <h3>Informasi Perkuliahan Tahun Ajaran 2024-2025</h3>
+            <ul>
+                <li>Perkuliahan Dilaksanakan : 11 September - 12 Januari</li>
+                <li>Ujian Tengah Semester : 30 Oktober - 03 November</li>
+                <li>Ujian Akhir Semester : 15 Januari - 19 Januari</li>
+                <li> 
+                    Akses informasi lengkap di: 
+                    <a href="https://simak.unkhair.ac.id" target="_blank">Simak Unkhair</a>
+                </li>
+            </ul>
+        </aside>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Portal Mahasiswa. Semua hak dilindungi.</p>
+    </footer>
+
+    <script>
+        function toggleInfo() {
+            const info = document.getElementById('additional-info');
+            info.classList.toggle('hidden'); // Menambahkan atau menghapus class 'hidden'
+        }
+    </script>
+</body>
+</html>
